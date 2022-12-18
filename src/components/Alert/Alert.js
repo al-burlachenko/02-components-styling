@@ -1,14 +1,14 @@
 import s from 'components/Alert/Alert.module.css';
+import Container from 'components/Container';
 import PropTypes from 'prop-types';
 
 function Alert({ text, type }) {
   return (
-    // <p role="alert" className={`${s[type]}`}>
-    //   {text}
-    // </p>
-    <p role="alert" className={s[type]}>
-      {text}
-    </p>
+    <Container>
+      <p role="alert" className={s[type]}>
+        {text}
+      </p>
+    </Container>
   );
 }
 
